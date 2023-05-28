@@ -8,23 +8,25 @@
 import Foundation
 import UIKit
 
-protocol AnyView {
-    var presenter: AnyPresenter? {get set}
-}
-
-
 class LoginViewController : UIViewController, AnyView {
     var presenter: AnyPresenter?
     
     private lazy var textField: UITextField = {
-           let tf = UITextField()
-           tf.placeholder = "Enter your username here"
-           tf.borderStyle = .roundedRect
-           tf.keyboardType = .default
-           tf.returnKeyType = .done
-           tf.clearButtonMode = .whileEditing
-           return tf
-       }()
+       let tf = UITextField()
+       tf.placeholder = "Enter your username here"
+       tf.borderStyle = .roundedRect
+       tf.keyboardType = .default
+       tf.returnKeyType = .done
+       tf.clearButtonMode = .whileEditing
+       return tf
+    }()
+    
+    private lazy var imageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFit
+        iv.image = UIImage(named: "logo.png")
+        return iv
+    }()
     
     private lazy var myButton: UIButton = {
         let button = UIButton()
@@ -55,6 +57,13 @@ class LoginViewController : UIViewController, AnyView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 80).isActive = true
+        imageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.6).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200 ).isActive = true
+        
         view.addSubview(textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
@@ -74,6 +83,5 @@ class LoginViewController : UIViewController, AnyView {
         emptyTextFieldLabel.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 5).isActive = true
         
         self.view.backgroundColor = UIColor.systemBackground
-        
     }
 }

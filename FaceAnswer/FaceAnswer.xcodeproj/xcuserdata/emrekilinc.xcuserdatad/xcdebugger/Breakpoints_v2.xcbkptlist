@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "66A6AFDF-A748-432B-BAD0-01680E262514"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3E10850-15CA-437F-81A0-CFE034D860DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceAnswer/Modules/Login/Interactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8F02418-6114-4E2B-9D0F-0E0F47BA3140"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceAnswer/Modules/Login/Interactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LoginInteractor"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F8F02418-6114-4E2B-9D0F-0E0F47BA3140 - 43ce4c900086358f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FaceAnswer.LoginInteractor.deinit"
+                  moduleName = "FaceAnswer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emrekilinc/Desktop/codeway%20mualakt/faceTrackedQuizGame/FaceAnswer/FaceAnswer/Modules/Login/Interactor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F8F02418-6114-4E2B-9D0F-0E0F47BA3140 - ab29c3347036ea6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FaceAnswer.LoginInteractor.__deallocating_deinit"
+                  moduleName = "FaceAnswer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emrekilinc/Desktop/codeway%20mualakt/faceTrackedQuizGame/FaceAnswer/FaceAnswer/Modules/Login/Interactor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F8F02418-6114-4E2B-9D0F-0E0F47BA3140 - 2baf1d09ffdcb01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FaceAnswer.LoginInteractor.__allocating_init() -&gt; FaceAnswer.LoginInteractor"
+                  moduleName = "FaceAnswer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emrekilinc/Desktop/codeway%20mualakt/faceTrackedQuizGame/FaceAnswer/FaceAnswer/Modules/Login/Interactor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "F8F02418-6114-4E2B-9D0F-0E0F47BA3140 - 4aef1b09b060e974"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FaceAnswer.LoginInteractor.init() -&gt; FaceAnswer.LoginInteractor"
+                  moduleName = "FaceAnswer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emrekilinc/Desktop/codeway%20mualakt/faceTrackedQuizGame/FaceAnswer/FaceAnswer/Modules/Login/Interactor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38EE4937-98DD-4386-A987-4AEAFB0D7454"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceAnswer/Modules/Login/Interactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "LoginInputInteractor"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "128AF901-619B-426F-A636-461E26308E0A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceAnswer/Modules/QuizTypeSelection/TypeEntity.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "Question"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C91F0C5A-A631-4F6A-B880-033F3D04F500"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceAnswer/Modules/Game/GameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "optionFirst"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

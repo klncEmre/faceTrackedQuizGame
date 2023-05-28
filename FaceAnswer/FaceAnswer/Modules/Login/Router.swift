@@ -10,11 +10,6 @@ import UIKit
 
 typealias EntryPoint = AnyView & UIViewController
 
-protocol AnyRouter {
-    var entry: EntryPoint? {get set}
-    static func start() -> AnyRouter
-}
-
 class LoginRouter: AnyRouter {
     var entry: EntryPoint?
     
@@ -23,8 +18,8 @@ class LoginRouter: AnyRouter {
         
         //assign vip
         var view: AnyView = LoginViewController()
-        let presenter: LoginPresenter = LoginPresenter()
-        let interactor: LoginInteractor = LoginInteractor()
+        var presenter: AnyPresenter = LoginPresenter()
+        var interactor: AnyInteractor = LoginInteractor()
         
         view.presenter = presenter
         
@@ -38,4 +33,12 @@ class LoginRouter: AnyRouter {
         
         return router
     }
+    
+    func nextPage() {
+        let nextRouter = QuizTypeSelectionRouter.start()
+        let nextVC = nextRouter.entry
+        entry?.navigationController?.pushViewController(nextVC!, animated: true)
+    }
+    
+
 }

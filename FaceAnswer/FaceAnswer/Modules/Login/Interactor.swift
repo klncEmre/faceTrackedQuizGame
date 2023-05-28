@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? { get set }
-}
+
 
 protocol LoginInputInteractor: AnyInteractor {
     func saveName(name: String) -> Void

@@ -7,12 +7,6 @@
 
 import Foundation
 
-protocol AnyPresenter {
-    var router: AnyRouter? {get set}
-    var interector: AnyInteractor? {get set}
-    var view: AnyView? {get set}
-    
-}
 
 protocol LoginInputPresenter: AnyPresenter {
     func gameTypePageRequested(name: String?) -> Void
@@ -31,13 +25,24 @@ class LoginPresenter: LoginInputPresenter {
     func gameTypePageRequested(name: String?) {
         //control user name, if it is ok call saveName for interactor
         user.name = name
-        
-        if(name == nil || name == "") {
+        if(name == nil) {
             (view as? LoginViewController)?.emptyTextFieldLabel.isHidden = false
+            (view as? LoginViewController)?.emptyTextFieldLabel.text = "Please enter a name first"
+        } else if name!.isEmpty || name!.count < 2 || name!.count > 15 || name!.containsEmoji() {
+            (view as? LoginViewController)?.emptyTextFieldLabel.isHidden = false
+            (view as? LoginViewController)?.emptyTextFieldLabel.text = "Please enter a suitable name first"
         } else {
             (view as? LoginViewController)?.emptyTextFieldLabel.isHidden = true
             //call interactor's saveName method to save name to user defaults.
             (interector as? LoginInteractor)?.saveName(name: user.name!)
+            (router as? LoginRouter)?.nextPage()
         }
+    }
+}
+
+extension String {
+    func containsEmoji() -> Bool {
+        let emojiPattern = "[\\p{Emoji}]"
+        return self.range(of: emojiPattern, options: .regularExpression) != nil
     }
 }
